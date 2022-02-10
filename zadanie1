@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int* p, * p1, * p2;
+    int a = 5, b, c = 6;
+    p = &a; p1 = &b; p2 = &c;
+    cout << "Adres: " << p << endl;
+    cin >> b;
+    cout << "Adres: " << p1 << " Wartosc: " << *p1 << endl;
+    cout << "Odejmowanie: " << (*p - *p1) << endl;
+    cout << "Srednia z 3 liczb: " << (double)(*p + *p1 + *p2) / 3.0;
+    return 0;
+}
