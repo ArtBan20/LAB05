@@ -1,0 +1,16 @@
+#include <iostream>
+#include <time.h>
+using namespace std;
+int main(){
+    int tab[10], i;
+    srand(time(NULL));
+    for (i = 0; i < 10; i++) {
+        tab[i] = rand() % 101;}
+    cout << "1 element: " << tab + 0 << endl;
+    cout << "4 element: " << tab + 3 << endl;
+    cout << "Adres: " << endl;
+    for (i = 0; i < 10; i++) {
+        cout << tab + i << endl;
+    }
+    return 0;
+}
